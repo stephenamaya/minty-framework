@@ -1,0 +1,163 @@
+/***************************
+****************************
+TABLE OF CONTENTS
+
+1.0 containers
+2.0 desktop columns / row
+3.0 mobile colummns
+
+****************************
+***************************/
+
+/***********************************/
+/*******   1.0 containers   ********/
+/***********************************/
+
+.container,
+.container-xs,
+.container-s,
+.container-m,
+.container-l,
+.container-xl {
+  margin: auto;
+  max-width: 1500px;
+}
+
+.container-xs {
+  width: 50%;
+}
+
+.container-s {
+  width: 70%;
+}
+
+.container-m {
+  width: 80%;
+}
+
+.container-l {
+  width: 90%;
+}
+
+.container-xl {
+  width: 100%;
+}
+
+/***********************************/
+/*******   2.0 desktop columns *****/
+/***********************************/
+
+.med12 {
+  width: 98%;
+}
+
+.med11 {
+  width: 89.66%;
+}
+
+.med10 {
+  width: 81.33%;
+}
+
+.med9 {
+  width: 73%;
+}
+
+.med8 {
+  width: 64.66%;
+}
+
+.med7 {
+  width: 56.33%;
+}
+
+.med6 {
+  width: 48%;
+}
+
+.med5 {
+  width: 39.66%;
+}
+
+.med4 {
+  width: 31.33%;
+}
+
+.med3 {
+  width: 23%;
+}
+
+.med2 {
+  width: 14.66%;
+}
+
+.med1 {
+  width: 6.33%;
+}
+
+.col {
+  box-sizing: border-box;
+  float: left;
+  margin: 0 1%;
+  padding: 10px;
+  /* This makes every column mint green for the demonstration */
+  background-color: rgb(169, 240, 218); 
+}
+
+.row {
+  margin: 1% 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/***********************************/
+/*******   3.0 mobile columns  *****/
+/***********************************/
+
+@media only screen and (max-width: 900px) {
+
+  .sml12 {
+    width: 98%;
+  }
+  .sml11 {
+    width: 89.66%;
+  }
+  .sml10 {
+    width: 81.33%;
+  }
+  .sml9 {
+    width: 73%;
+  }
+  .sml8 {
+    width: 64.66%;
+  }
+  .sml7 {
+    width: 56.33%;
+  }
+  .sml6 {
+    width: 48%;
+  }
+  .sml5 {
+    width: 39.66%;
+  }
+  .sml4 {
+    width: 31.33%;
+  }
+  .sml3 {
+    width: 23%;
+  }
+  .sml2 {
+    width: 14.66%;
+  }
+  .sml1 {
+    width: 6.33%;
+  }
+  .container,
+  .container-xs,
+  .container-s,
+  .container-m,
+  .container-l,
+  .container-xl {
+  width: 98%;
+  }
+}
