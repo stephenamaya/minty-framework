@@ -22,25 +22,9 @@ TABLE OF CONTENTS
 /*********   1.0 global   **********/
 /***********************************/
 
-html,
-body,
-div,
-span,
-h1,
-h2,
-h3,
-p,
-a,
-em,
-img,
-strong,
-ol,
-ul,
-li,
-table,
-caption,
-footer,
-nav {
+html,body,div,span,h1,h2,h3,
+p,a,em,img,strong,ol,
+ul,li,table,caption,footer,nav {
   margin: 0;
   padding: 0;
   left: 0;
@@ -58,14 +42,6 @@ body {
 /***********************************/
 /*****   2.0 Color Palette    ******/
 /***********************************/
-
-.minty {
-  background-color: rgb(169, 240, 218);
-}
-
-.grey {
-  background-color: rgb(240, 245, 245);
-}
 
 /***********************************/
 /***   3.0 Navigation header   *****/
