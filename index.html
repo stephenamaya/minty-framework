@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +9,17 @@
     <link rel="stylesheet" href="./grid.css">
     <script src="" defer>  </script>
 </head>
-
 <body>
+
     <!--[if IE]> <h1> You are using an <strong>outdated</strong> browser. Please update your browser to improve your experience.</h1> <![endif]-->
 
     <!-- navigation  -->
 
     <nav>
         <a href="#"> Nav </a>
-        <a href="#"> Does </a>
-        <a href="#"> Nothing </a>
+        <a href="#"> Spav </a>
+        <a href="#"> Gwav </a>
+        <a href="./docs/minty.zip" class="download"> Download! </a>
     </nav>
 
     <!-- welcome hero -->
@@ -34,33 +34,40 @@
     <section class="container-m center">
         <div class="row">
             <h3>
-                The goal of Minty is to jumpstart your HTML and CSS project with a super light, simple, and tested
-                solution.
-                Starting with the Minty framework will provide a few things, literally.
+                The goal of Minty is to jumpstart your static site with this CSS framework / HTML Template, while keeping small but very organized code.
+                Downloading the Minty framework will give you this website, which is made of:
             </h3>
         </div>
+    </section>
 
-        <!-- what you get -->
+    <!-- what you get -->
 
-        <div class="row grey">
-            <br>
+    <section class="container-m center grey">
+        <div class="row">
+    
             <h3> HTML Boilerplate </h3>
             <p> Bare minimum html to get you started, meta tags, body, IE conditional, and this page </p> <br>
 
             <h3> 12 Column Grid </h3>
-            <p> Bootstrap style, simple grid that works on every browser (even evil IE).</p> <br>
+            <p> Mobile friendly simple grid that works on every browser (even evil IE).</p> <br>
 
             <h3> Pre-Organized Code </h3>
             <p> The CSS files have a table of contents so you can code in organized sections.</p> <br>
+
+            <h3> Normalized Styles </h3>
+            <p> Body and font formatting to keep things predictable. </p>
         </div>
     </section>
 
-    <section class="center">
+    <section class="container-m center">
         <div class="row">
-            <h3> 12 Column grid example, class naming organization is container &#9656; row &#9656; col &#9656; col-size
-            </h3>
-            <p> There are 2 media queries, med and sml. To specify mobile size, use sml class following the grid.css
-                sizing. </p>
+            <h3> 12 Column grid example, class naming organization is &#9656; row &#9656; column &#9656; column-size </h3>
+            <p>  The media query is bare bones, desktop and mobile. Specify the column width by size:</p>
+            <p> <strong>Desktop:</strong> c12, c6, c4, etc. 12 is full width, 6 is 50%, and so on.</p>
+            <p> <strong>Mobile:</strong> s12, s6, s4, etc. 12 is full width, 6 is 50%, and so on.</p>
+            <p>The last row is c3 for desktop and s6 for mobile, resize to see. </p>
+                
+    
         </div>
     </section>
 
@@ -69,56 +76,63 @@
     <section class="container-m">
 
         <div class="row">
-            <div class="col med12">
-                <p> 12 </p>
+            <div class="col c12">
+                <p> All 12 columns </p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col med6">
-                <p> 6 </p>
+            <div class="col c6">
+                <p>6</p>
             </div>
-            <div class="col med6">
-                <p> 6 </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col med4">
-                <p> 4 </p>
-            </div>
-
-            <div class="col med4">
-                <p> 4 </p>
-            </div>
-
-            <div class="col med4">
-                <p> 4 </p>
+            <div class="col c6">
+                <p>6</p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col med3 sml4">
-                <p> 3, mobile 4 </p>
+            <div class="col c4">
+                <p>4</p>
             </div>
 
-            <div class="col med3 sml4">
-                <p> 3, mobile 4 </p>
+            <div class="col c4">
+                <p>4</p>
             </div>
 
-            <div class="col med3 sml4">
-                <p> 3, mobile 4 </p>
+            <div class="col c4">
+                <p>4</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col c3 s6">
+                <p>c3 s6</p>
             </div>
 
-            <div class="col med3 sml12">
-                <p> 3, mobile 12 </p>
+            <div class="col c3 s6">
+                <p>c3 s6</p>
+            </div>
+
+            <div class="col c3 s6">
+                <p>c3 s6</p>
+            </div>
+
+            <div class="col c3 s6">
+                <p>c3 s6</p>
             </div>
         </div>
     </section>
 
-    <footer class = "center grey">
-        <p> Thanks for peeking! </p>
-    </footer>
+    <section class = "container-m center">
+        <p><strong>Shout Out:</strong></p>
+        <p>I combined elements of Min css and Simple grid for this project.</p>
+        <p><a href="https://simplegrid.io/">Simple Grid</a></p>
+        <p><a href="https://mincss.com">Min CSS</a></p>
+    </section>
+
+    <div class="grey center">
+        <p>Thanks for checkin out Minty</p>
+    </div>
 
 </body>
 </html>

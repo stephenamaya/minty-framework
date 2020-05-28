@@ -1,163 +1,151 @@
-/***************************
-****************************
+/**************************
+*************************** 
 TABLE OF CONTENTS
 
-1.0 containers
-2.0 desktop columns / row
-3.0 mobile colummns
+1.0  Containers
+2.0  Rows
+3.0  Columns
+4.0  Mobile 
 
 ****************************
 ***************************/
 
 /***********************************/
-/*******   1.0 containers   ********/
+/******   1.0  Containers    *******/
 /***********************************/
 
-.container,
-.container-xs,
 .container-s,
 .container-m,
-.container-l,
-.container-xl {
-  margin: auto;
-  max-width: 1500px;
+.container-l {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-
-.container-xs {
+.container-s {
   width: 50%;
 }
-
-.container-s {
-  width: 70%;
-}
-
 .container-m {
-  width: 80%;
+  width: 75%;
 }
-
-.container-l {
+.container-m {
+  width: 90%;
+}
+.container {
   width: 90%;
 }
 
-.container-xl {
+/***********************************/
+/*********   2.0  Rows    **********/
+/***********************************/
+
+.row {
+  position: relative;
   width: 100%;
+}
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 1%;
+  min-height: 0.125rem;
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /***********************************/
-/*******   2.0 desktop columns *****/
+/***   3.0  Desktop columns    *****/
 /***********************************/
 
-.med12 {
+.col {
+  background-color: rgb(169, 240, 218);
+  padding: 10px;
+}
+
+.c1 {
+  width: 6.33%;
+}
+.c2 {
+  width: 14.66%;
+}
+.c3 {
+  width: 23%;
+}
+.c4 {
+  width: 31.33%;
+}
+.c5 {
+  width: 39.66%;
+}
+.c6 {
+  width: 48%;
+}
+.c7 {
+  width: 56.33%;
+}
+.c8 {
+  width: 64.66%;
+}
+.c9 {
+  width: 73%;
+}
+.c10 {
+  width: 81.33%;
+}
+.c11 {
+  width: 89.66%;
+}
+.c12 {
   width: 98%;
 }
 
-.med11 {
-  width: 89.66%;
-}
-
-.med10 {
-  width: 81.33%;
-}
-
-.med9 {
-  width: 73%;
-}
-
-.med8 {
-  width: 64.66%;
-}
-
-.med7 {
-  width: 56.33%;
-}
-
-.med6 {
-  width: 48%;
-}
-
-.med5 {
-  width: 39.66%;
-}
-
-.med4 {
-  width: 31.33%;
-}
-
-.med3 {
-  width: 23%;
-}
-
-.med2 {
-  width: 14.66%;
-}
-
-.med1 {
-  width: 6.33%;
-}
-
-.col {
-  box-sizing: border-box;
-  float: left;
-  margin: 0 1%;
-  padding: 10px;
-  /* This makes every column mint green for the demonstration */
-  background-color: rgb(169, 240, 218); 
-}
-
-.row {
-  margin: 1% 0;
-  overflow: auto;
-  overflow-x: hidden;
-}
-
 /***********************************/
-/*******   3.0 mobile columns  *****/
+/****   4.0  Mobile columns    *****/
 /***********************************/
 
 @media only screen and (max-width: 900px) {
 
-  .sml12 {
-    width: 98%;
-  }
-  .sml11 {
-    width: 89.66%;
-  }
-  .sml10 {
-    width: 81.33%;
-  }
-  .sml9 {
-    width: 73%;
-  }
-  .sml8 {
-    width: 64.66%;
-  }
-  .sml7 {
-    width: 56.33%;
-  }
-  .sml6 {
-    width: 48%;
-  }
-  .sml5 {
-    width: 39.66%;
-  }
-  .sml4 {
-    width: 31.33%;
-  }
-  .sml3 {
-    width: 23%;
-  }
-  .sml2 {
-    width: 14.66%;
-  }
-  .sml1 {
+  .s1 {
     width: 6.33%;
   }
-  .container,
-  .container-xs,
-  .container-s,
-  .container-m,
-  .container-l,
-  .container-xl {
-  width: 98%;
+  .s2 {
+    width: 14.66%;
+  }
+  .s3 {
+    width: 23%;
+  }
+  .s4 {
+    width: 31.33%;
+  }
+  .s5 {
+    width: 39.66%;
+  }
+  .s6 {
+    width: 48%;
+  }
+  .s7 {
+    width: 56.33%;
+  }
+  .s8 {
+    width: 64.66%;
+  }
+  .s9 {
+    width: 73%;
+  }
+  .s10 {
+    width: 81.33%;
+  }
+  .s11 {
+    width: 89.66%;
+  }
+  .s12 {
+    width: 98%;
+  }
+
+  .container-s,.container-m,.container-l {
+    width: 96%;
   }
 }
