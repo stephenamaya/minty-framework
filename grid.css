@@ -16,24 +16,25 @@ TABLE OF CONTENTS
 
 .container-s,
 .container-m,
-.container-l {
+.container-l,
+.container-xl {
   margin-left: auto;
   margin-right: auto;
   max-width: 1400px;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 .container-s {
-  width: 50%;
+  width: 60%;
 }
 .container-m {
   width: 75%;
 }
-.container-m {
-  width: 90%;
+.container-l {
+  width: 85%;
 }
-.container {
-  width: 90%;
+.container-xl {
+  width: 95%;
 }
 
 /***********************************/
@@ -145,7 +146,12 @@ TABLE OF CONTENTS
     width: 98%;
   }
 
-  .container-s,.container-m,.container-l {
-    width: 96%;
+  .container-s,
+  .container-m,
+  .container-l,
+  .container-xl {
+    width: 98%;
+    padding-top: 6%;
+    padding-bottom: 6%;
   }
 }
