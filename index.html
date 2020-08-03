@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Welcome </title>
     <meta name="description" content="awesome description of website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css?ver=2">
     <link rel="stylesheet" href="./grid.css">
     <script src="" defer>  </script>
 </head>
+
 <body>
 
     <!--[if IE]> <h1> You are using an <strong>outdated</strong> browser. Please update your browser to improve your experience.</h1> <![endif]-->
@@ -17,63 +19,61 @@
     <!-- navigation  -->
 
     <nav>
-        <a href="#"> Nav </a>
-        <a href="#"> Spav </a>
-        <a href="#"> Gwav </a>
-        <a href="./docs/mint.zip" class="download"> Download! </a>
+        <a href="./docs/mint.zip" class="download"> Download </a>
     </nav>
 
     <!-- welcome hero -->
 
-    <header class="hero center">
-        <h1>Welcome to the Minty CSS framework</h1>
-        <h3>It's a framework for people who dont want one</h3>
+    <header>
+        <h1> Welcome to Minty</h1>
+        <h3> One of those HTML template things </h3>
     </header>
 
-    <!-- minty goal -->
+    <!-- goal -->
 
-    <section class="container-m center">
-        <div class="row">
+    <section class="container-m">
+       
             <h1>The Goal</h1>
-            <br>
+
             <h3>
-                The goal of Minty is to jumpstart your static site with this CSS framework / HTML Template. Specifically tested and designed for complete browser support.
-                Downloading the Minty framework will give you this website, which is made of:
+                This template provides a jumpstart to any static site. Made as small and simply as possible, it provides
+                the grid, basic styling, and pre-commented notes to keep your future beast tidy.
             </h3>
-        </div>
+     
     </section>
 
     <!-- what you get -->
 
-    <div class="container-m center grey">
-        <div class="row">
+    <div class="container-m grey">
+     
             <h3> HTML Boilerplate </h3>
-            <p> Bare minimum html to get you started, meta tags, body, IE conditional, and this page </p> <br>
+            <p> Bare minimum html to get you started. </p> <br>
 
             <h3> 12 Column Grid </h3>
-            <p> Mobile friendly simple grid that works on every browser (even evil IE).</p> <br>
+            <p> A simple grid option that works, even in IE.  </p> <br>
 
             <h3> Pre-Organized Code </h3>
-            <p> The CSS files have a table of contents so you can code in organized sections.</p> <br>
+            <p> Tables of contents pre-noted for keeping organized. </p> <br>
 
             <h3> Normalized Styles </h3>
-            <p> Body and font formatting to keep things predictable. </p>
-        </div>
+            <p> Brief normalize at the start of the main CSS. </p>
+       
     </div>
 
-    <div class="container-m center">
-        <div class="row">
-            <h3> 12 Column grid example, class naming organization is &#9656; row &#9656; column &#9656; column-size </h3>
-            <p>  The media query is bare bones, desktop and mobile. Specify the column width by size:</p>
+    <div class="container-m">
+     
+            <h3> 12 Column grid example, class naming organization is &#9656; row &#9656; column &#9656; column-size
+            </h3>
+            <p> The media query desktop and mobile. You specify the column width by the number / 12</p>
             <p> <strong>Desktop:</strong> c12, c6, c4, etc. 12 is full width, 6 is 50%, and so on.</p>
             <p> <strong>Mobile:</strong> s12, s6, s4, etc. 12 is full width, 6 is 50%, and so on.</p>
             <p>The last row is c3 for desktop and s6 for mobile, resize to see. </p>
-        </div>
+     
     </div>
 
     <!-- grid example  -->
 
-    <div class="container-m">
+    <div class="container-m grey">
 
         <div class="row">
             <div class="col c12">
@@ -106,33 +106,34 @@
 
         <div class="row">
             <div class="col c3 s6">
-                <p>c3 s6</p>
+                <p>c3 s6 </p>
             </div>
 
             <div class="col c3 s6">
-                <p>c3 s6</p>
+                <p>c3 s6 </p>
             </div>
 
             <div class="col c3 s6">
-                <p>c3 s6</p>
+                <p>c3 s6 </p>
             </div>
 
             <div class="col c3 s6">
-                <p>c3 s6</p>
+                <p>c3 s6 </p>
             </div>
         </div>
     </div>
 
-    <div class = "container-m center">
-        <p><strong>Shout Out:</strong></p>
+    <div class="container-m center">
+        <h3>Shout Out</h3>
         <p>I combined elements of Min css and Simple grid for this project.</p>
         <p><a href="https://simplegrid.io/">Simple Grid</a></p>
         <p><a href="https://mincss.com">Min CSS</a></p>
     </div>
 
-    <footer class="grey center">
-        <p>Thanks for checkin out Minty</p>
+    <footer>
+        <p>Thanks for checking out Minty </p>
     </footer>
 
 </body>
+
 </html>

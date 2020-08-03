@@ -2,7 +2,7 @@
 *************************** 
 TABLE OF CONTENTS
 
-1.0  Global 
+1.0  Global / Normalize 
 2.0  Color Palette
 3.0  Navigation header
 4.0  Navigation footer
@@ -19,7 +19,7 @@ TABLE OF CONTENTS
 ***************************/
 
 /***********************************/
-/*********   1.0 global   **********/
+/****   1.0 global / Normalize  ****/
 /***********************************/
 
 html,body,div,span,h1,h2,h3,
@@ -43,10 +43,6 @@ body {
 /*****   2.0 Color Palette    ******/
 /***********************************/
 
-.minty{
-  background-color:rgb(169, 240, 218);
-}
-
 .grey{
   background-color: rgb(236, 236, 236);
 }
@@ -55,21 +51,33 @@ body {
 /***********************************/
 
 nav {
-  background-color: white;
-  overflow: hidden;
-  padding: 15px;
   position: fixed;
-  top: 0;
-  width: 100%;
+  padding: 30px 20px;
   z-index: 99;
+  width: 100%;
 }
-nav a {
-  padding: 14px 16px;
+
+.download {
+  float: left;
+  background-color: rgb(212, 44, 142);
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: white;
+}
+
+.download:hover {
+  background-color: rgb(0, 194, 178);
 }
 
 /***********************************/
 /***   4.0  Navigation footer   ****/
 /***********************************/
+
+footer{
+  background-color:rgb(236, 236, 236);
+  padding: 15px;
+}
 
 /***********************************/
 /*********   5.0 Fonts    **********/
@@ -96,27 +104,20 @@ h6 {
 p {
   font-size: 1.125rem;
   font-weight: 200;
-  line-height: 1.8;
-}
-.left {
-  text-align: left;
-}
-.right {
-  text-align: right;
-}
-.center {
-  text-align: center;
-  margin: auto;
 }
 
 /***********************************/
 /******   6.0  Hero stuff   ********/
 /***********************************/
 
-.hero {
+header{
   background: rgb(169, 240, 218);
-  min-height: 30vh;
-  padding-top: 20vh;
+  height: 70vh;
+  text-align: center;
+}
+
+header h1{
+  padding-top: 25vh;
 }
 
 /***********************************/
@@ -135,23 +136,23 @@ p {
 /*******   10.0  Buttons   *********/
 /***********************************/
 
-.download {
-  background-color: rgb(255, 203, 184);
-  transition: 0.3s;
-  border-radius: 5px;
-}
-
-.download:hover {
-  border-radius: 30px;
-}
-
 /***********************************/
 /****   11.0 Personal kinks   ******/
 /***********************************/
+
+body{
+  line-height: 1.8;
+  text-align: center;
+}
 
 /***********************************/
 /*****   12.0 Mobile size    *******/
 /***********************************/
 
 @media only screen and (max-width: 900px) {
+
+  nav{
+    background-color: white;
+    padding: 10px;
+  }
 }
